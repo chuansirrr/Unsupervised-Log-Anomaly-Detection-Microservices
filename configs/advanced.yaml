@@ -1,0 +1,28 @@
+
+seed: 7
+data:
+  log_dir: data/sample_logs/
+  max_seq_len: 256
+  batch_size: 64
+  train_ratio: 0.8
+  service_metadata_csv: data/service_edges.csv
+  simulate_stream: true
+  stream_services: 8
+  stream_rate_per_sec: 80
+  anomaly_rate: 0.06
+model:
+  transformer_name: distilbert-base-uncased
+  transformer_dim: 128
+  lstm_hidden: 96
+  freq_topk: 1024
+  fusion_dim: auto   # computed dynamically
+  gat_hidden: 96
+  ae_hidden: [384, 96]
+train:
+  epochs: 10
+  lr: 1e-3
+  device: cuda
+evaluation:
+  threshold: auto
+  gmm_components: 3
+  use_umap: true

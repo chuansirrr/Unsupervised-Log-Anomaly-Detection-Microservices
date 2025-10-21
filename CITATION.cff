@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it."
+title: "Unsupervised-Log-Anomaly-Detection-Microservices-Advanced"
+authors:
+  - family-names: "YourName"
+    given-names: "First"
+version: "0.2.0"
+date-released: "2025-10-21"
+repository-code: "https://example.com/Unsupervised-Log-Anomaly-Detection-Microservices-Advanced"

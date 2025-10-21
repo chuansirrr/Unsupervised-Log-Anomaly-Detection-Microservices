@@ -1,0 +1,14 @@
+
+torch>=2.2
+transformers>=4.41
+networkx>=3.2
+scikit-learn>=1.4
+numpy>=1.26
+pandas>=2.0
+tqdm>=4.66
+pyyaml>=6.0
+matplotlib>=3.8
+seaborn>=0.13
+shap>=0.45
+streamlit>=1.34
+umap-learn>=0.5.6

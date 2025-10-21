@@ -1,0 +1,23 @@
+
+seed: 42
+data:
+  log_dir: data/sample_logs/
+  max_seq_len: 256
+  batch_size: 64
+  train_ratio: 0.8
+  service_metadata_csv: data/service_edges.csv
+model:
+  transformer_name: distilbert-base-uncased
+  transformer_dim: 128
+  lstm_hidden: 64
+  fusion_dim: 160
+  freq_topk: 512
+  gat_hidden: 64
+  ae_hidden: [256, 64]
+train:
+  epochs: 8
+  lr: 1e-3
+  device: cuda
+evaluation:
+  threshold: auto
+  gmm_components: 2
